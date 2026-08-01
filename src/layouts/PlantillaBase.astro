@@ -1,0 +1,28 @@
+---
+import Encabezado from "../components/Encabezado.astro";
+import PiePagina from "../components/PiePagina.astro";
+import "../styles/global.css";
+
+interface Props {
+  tituloPagina: string;
+  tituloSitio: string;
+  autor: string;
+}
+
+const { tituloPagina, tituloSitio, autor } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{tituloPagina}</title>
+  </head>
+  <body>
+    <Encabezado titulo={tituloSitio} />
+    <main class="contenedor-principal">
+      <slot />
+    </main>
+    <PiePagina autor={autor} />
+  </body>
+</html>

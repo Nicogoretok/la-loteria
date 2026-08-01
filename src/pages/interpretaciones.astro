@@ -1,0 +1,43 @@
+---
+import PlantillaBase from "../layouts/PlantillaBase.astro";
+import TarjetaInterpretacion from "../components/TarjetaInterpretacion.astro";
+---
+
+<PlantillaBase
+  tituloPagina="La lotería — Interpretaciones"
+  tituloSitio="La lotería"
+  autor="Shirley Jackson"
+>
+  <section class="seccion">
+    <h2>Interpretaciones</h2>
+    <p>
+      A continuación, tres lecturas distintas de <em>La lotería</em>, cada
+      una desde un criterio de análisis diferente.
+    </p>
+
+    <div class="rejilla-interpretaciones">
+      <TarjetaInterpretacion
+        criterio="Desde la conducta colectiva"
+        interpretacion="El significado que propongo es que la obra expone la necesidad psicológica de los humanos de querer ser parte de un grupo, tanto así que los ciega ante acciones atroces."
+        evidencia='En todo el texto se muestra a los pueblerinos seguir ciegamente y rigurosamente la lotería y las reglas de esta, esto se muestra más específicamente en estas partes "Espero que no sea Nancy -cuchicheó una chica" y "¡Vamos, vamos todo el mundo! -gritó el viejo Warner."'
+        argumentacion="Estas citas muestran que los pueblerinos, aunque muestren miedo como en la primera cita, en el momento en que los demás empiezan a apedrear les deja de importar lo que sienta la otra persona y se dejan llevar por el rebaño."
+      />
+
+      <TarjetaInterpretacion
+        criterio="La normalización de actos brutales por las tradiciones"
+        interpretacion="Muchas veces se normalizan atrocidades que se hacen en ritos o tradiciones y se excusan con que es cultura."
+        evidencia='En distintas partes se muestra esta fidelidad al rito y a la tradición, por ejemplo "La lotería ha existido desde siempre" añadió, irritado, y "habían perdido la caja original, aun mantenían la tradición de utilizar piedras".'
+        argumentacion="Las citas demuestran la fidelidad ante la tradición o el rito, sin importar lo inhumano que sea."
+      />
+
+      <TarjetaInterpretacion
+        criterio="La censura ante la amenaza"
+        interpretacion="El cuento muestra cómo el miedo a la violencia colectiva impide que las personas expresen abiertamente su desacuerdo con la lotería, incluso si algunas dudan de su sentido."
+        evidencia='El comentario del señor Adams sobre que en el pueblo del norte "están hablando de terminar con la lotería" es recibido con desdén y burla por parte del viejo Warner, quien lo tacha de idea de "gente loca", y más adelante, cuando Tessie finalmente protesta gritando que "no fue justo", nadie la defiende — ni siquiera su esposo Bill le pide que se calle, y el pueblo entero, incluidos sus propios hijos, participa en el apedreamiento.'
+        argumentacion="El texto no muestra a nadie cuestionando la lotería abiertamente dentro del pueblo mismo; la única mención de oposición viene de fuera, y es rápidamente descalificada. El desenlace refuerza esta lectura: cuando alguien sí se opone (Tessie), la respuesta inmediata y unánime del grupo es la violencia, sin titubeos de nadie más. Ese contraste funciona como evidencia indirecta de que el miedo a correr la misma suerte mantiene calladas las dudas de los demás."
+      />
+    </div>
+
+    <p><a href="/obra">Volver a la información de la obra</a></p>
+  </section>
+</PlantillaBase>

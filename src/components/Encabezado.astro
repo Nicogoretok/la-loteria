@@ -1,0 +1,60 @@
+---
+interface Props {
+  titulo: string;
+}
+
+const { titulo } = Astro.props;
+---
+
+<header class="encabezado">
+  <div class="franja-superior"></div>
+  <div class="contenedor-encabezado">
+    <h1 class="titulo-sitio">{titulo}</h1>
+    <nav class="navegacion">
+      <a href="/">Inicio</a>
+      <a href="/obra">La obra</a>
+      <a href="/interpretaciones">Interpretaciones</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .franja-superior {
+    height: 6px;
+    background-color: var(--color-rojo-apagado);
+  }
+
+  .encabezado {
+    background-color: var(--color-crema);
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .contenedor-encabezado {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .titulo-sitio {
+    margin: 0 0 1rem;
+  }
+
+  .navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .navegacion a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color-negro-carbon);
+    border-bottom: 2px solid transparent;
+  }
+
+  .navegacion a:hover {
+    border-bottom: 2px solid var(--color-rojo-apagado);
+  }
+</style>
