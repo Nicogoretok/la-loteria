@@ -1,5 +1,7 @@
 ---
 import PlantillaBase from "../layouts/PlantillaBase.astro";
+import { Image } from "astro:assets";
+import fotoAutora from "../img/autora.jpg";
 ---
 
 <PlantillaBase
@@ -11,12 +13,84 @@ import PlantillaBase from "../layouts/PlantillaBase.astro";
     <h2>Sobre la obra</h2>
     <p><strong>Título:</strong> La lotería</p>
     <p><strong>Autor o autora:</strong> Shirley Jackson</p>
+    <div class="tarjeta-autora">
+      <Image
+        class="foto-autora"
+        src={fotoAutora}
+        alt="Fotografía de Shirley Jackson"
+        width="200"
+        height="250"
+      />
+      <ul class="ficha-rapida">
+        <li><strong>Género:</strong> terror psicológico</li>
+        <li><strong>Año de publicación:</strong> 1948</li>
+        <li><strong>Ambientación:</strong> un pequeño pueblo estadounidense</li>
+      </ul>
+    </div>
     <p>
       La obra nos muestra un pueblo donde cada año se celebra una tradición
       que se parece a una lotería, donde participan todas las personas del
       pueblo, y en la cual a la persona que "gana" la lotería le ocurre un
-      infortunio.
+      infortunio. Detrás de esa premisa, el cuento funciona como una crítica
+      a la obediencia ciega hacia las costumbres y a cómo una comunidad
+      entera puede normalizar la violencia con tal de no romper con la
+      tradición.
     </p>
+  </section>
+
+  <section class="seccion">
+    <h2>Sobre la autora</h2>
+    <p>
+      Shirley Jackson nació en San Francisco en 1916 y murió en 1965. Fue una
+      escritora estadounidense de cuentos y novelas, reconocida sobre todo
+      por su aporte al género del terror y el suspenso psicológico. Aunque
+      ya era popular en vida, el interés por su obra creció todavía más
+      después de su muerte.
+    </p>
+    <p>
+      Cuando "La lotería" se publicó en la revista The New Yorker en 1948,
+      generó una reacción enorme: cientos de lectores le escribieron a la
+      redacción, muchos de ellos confundidos o molestos por el final de la
+      historia.
+    </p>
+  </section>
+
+  <section class="seccion">
+    <h3>¿Qué tipo de obras escribía?</h3>
+    <p>
+      Jackson se especializó en el terror psicológico y el relato gótico. En
+      vez de apoyarse en monstruos o elementos sobrenaturales evidentes, su
+      estilo se centraba en el malestar escondido detrás de la vida
+      cotidiana: familias, pueblos chicos y rutinas aparentemente normales
+      donde algo no termina de encajar. La violencia sin sentido y la
+      presión social también son temas recurrentes en su obra.
+    </p>
+  </section>
+
+  <section class="seccion">
+    <h3>Obras más destacadas</h3>
+    <ul class="lista-obras">
+      <li><strong>La lotería</strong> (relato corto, 1948)</li>
+      <li><strong>Hangsaman</strong> (novela, 1951)</li>
+      <li>
+        <strong>La maldición de Hill House</strong> (The Haunting of Hill
+        House, novela, 1959)
+      </li>
+      <li>
+        <strong>Siempre hemos vivido en el castillo</strong> (We Have Always
+        Lived in the Castle, novela, 1962)
+      </li>
+    </ul>
+  </section>
+
+  <section class="seccion">
+    <h3>Curiosidad</h3>
+    <blockquote>
+      Según contó la propia Jackson, escribió "La lotería" en apenas dos
+      horas: la idea se le ocurrió mientras subía una cuesta empujando el
+      cochecito de su hija, de vuelta de hacer las compras, y al llegar a
+      casa se sentó a escribir el cuento casi de un tirón.
+    </blockquote>
     <p>
       <a href="/interpretaciones">Ver las interpretaciones de esta obra</a>
     </p>

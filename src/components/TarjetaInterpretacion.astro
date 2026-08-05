@@ -32,11 +32,17 @@ const { criterio, interpretacion, evidencia, argumentacion } = Astro.props;
   .tarjeta-interpretacion {
     background-color: #ffffff;
     border: 1px solid var(--color-gris-piedra);
-    border-radius: 0;
-    padding: 1.25rem;
+    border-radius: 10px;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .tarjeta-interpretacion:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(43, 40, 37, 0.15);
   }
 
   .criterio-tarjeta {

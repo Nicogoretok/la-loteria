@@ -28,10 +28,11 @@ const { titulo } = Astro.props;
     background-color: var(--color-crema);
     text-align: center;
     padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(107, 104, 98, 0.25);
   }
 
   .contenedor-encabezado {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1.5rem;
   }
@@ -43,7 +44,7 @@ const { titulo } = Astro.props;
   .navegacion {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 0.5rem;
     flex-wrap: wrap;
   }
 
@@ -51,10 +52,13 @@ const { titulo } = Astro.props;
     text-decoration: none;
     font-weight: 500;
     color: var(--color-negro-carbon);
-    border-bottom: 2px solid transparent;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    transition: background-color 0.15s ease, color 0.15s ease;
   }
 
   .navegacion a:hover {
-    border-bottom: 2px solid var(--color-rojo-apagado);
+    background-color: var(--color-rojo-apagado);
+    color: var(--color-crema);
   }
 </style>
