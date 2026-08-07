@@ -1,0 +1,85 @@
+<section class="preview-interpretaciones" aria-labelledby="titulo-interpretaciones">
+  <h2 id="titulo-interpretaciones">Interpretaciones del cuento</h2>
+
+  <div class="preview-interpretaciones__grid">
+    <article class="tarjeta-preview">
+      <h3>Interpretación 1: La tradición ciega</h3>
+      <p>
+        Una mirada a cómo las costumbres se mantienen incluso cuando nadie
+        recuerda por qué comenzaron.
+      </p>
+      <a class="boton-preview" href="/interpretaciones">Leer más</a>
+    </article>
+
+    <article class="tarjeta-preview">
+      <h3>Interpretación 2: La presión social</h3>
+      <p>
+        El pueblo muestra cómo el miedo a ser diferente puede silenciar a cada
+        persona.
+      </p>
+      <a class="boton-preview" href="/interpretaciones">Leer más</a>
+    </article>
+
+    <article class="tarjeta-preview">
+      <h3>Interpretación 3: La violencia cotidiana</h3>
+      <p>
+        La historia transforma un día común en una reflexión sobre la violencia
+        aceptada por la comunidad.
+      </p>
+      <a class="boton-preview" href="/interpretaciones">Leer más</a>
+    </article>
+  </div>
+</section>
+
+<style>
+  .preview-interpretaciones {
+    padding: var(--espaciado-lg) 0;
+  }
+
+  .preview-interpretaciones__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--espaciado-md);
+    margin-top: var(--espaciado-md);
+  }
+
+  .tarjeta-preview {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid rgba(107, 104, 98, 0.35);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .tarjeta-preview h3 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .tarjeta-preview p {
+    margin: 0.75rem 0 1.25rem;
+  }
+
+  .boton-preview {
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 0.45rem 0.9rem;
+    border-radius: 5px;
+    background-color: var(--color-rojo-apagado);
+    color: var(--color-crema);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .boton-preview:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 720px) {
+    .preview-interpretaciones__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

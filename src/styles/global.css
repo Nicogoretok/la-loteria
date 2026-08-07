@@ -103,7 +103,7 @@ blockquote {
 
 .tarjeta-autora {
   display: flex;
-  gap: var(--espaciado-md);
+  gap: 9rem;
   align-items: flex-start;
   flex-wrap: wrap;
   margin: var(--espaciado-md) 0;
@@ -115,9 +115,23 @@ blockquote {
   flex-shrink: 0;
 }
 
+.contenido-autora {
+  flex: 0 1 43ch;
+  max-width: 43ch;
+  min-width: 280px;
+}
+
+.contenido-autora p {
+  margin: 0;
+}
+
+.contenido-autora p + p {
+  margin-top: 2.5rem;
+}
+
 .ficha-rapida {
   list-style: none;
-  margin: 0;
+  margin: var(--espaciado-md) 0;
   padding: 1rem 1.25rem;
   background-color: rgba(217, 180, 90, 0.2);
   border-left: 4px solid var(--color-amarillo-trigo);

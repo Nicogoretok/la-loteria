@@ -1,6 +1,6 @@
 ---
 import Encabezado from "../components/Encabezado.astro";
-import PiePagina from "../components/PiePagina.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 interface Props {
@@ -23,6 +23,6 @@ const { tituloPagina, tituloSitio, autor } = Astro.props;
     <main class="contenedor-principal">
       <slot />
     </main>
-    <PiePagina autor={autor} />
+    <Footer />
   </body>
 </html>
